@@ -41,12 +41,24 @@ git remote rm origin
 4.1.2. если не ответит ничего, то ничего не делаем
 
 4.3. Добавляем внешний репозиторий под alias-ом origin
-git remote add origin olegr@gitlab.silversite.ru:/var/git/
+git remote add origin olegr@3beta.ru:/var/git/
 4.4. И, наконец, говорим своему локальному git-у, что 
-git push --set-upstream origin master
+git push --set-upstream origin master (пушаем и одновременно связываем удаленный репозиторий с локальным)
 =============================================================================
 
-Для проекта, который надо склонировать с gitlab.silversite.ru:
+НА боевом сервере
+git init
 
-git clone username@gitlab.silversite.ru:/var/git/projectName
+Если директория на боевом сервере пуста
+Для проекта, который надо склонировать с 3beta.ru:
+
+git clone username@v:/var/git/projectName
+
+Если не пуста 
+
+git add .
+git commit -a -m 'initial commit'  
+git push --set-upstream origin master
+
+
 ===========================================================================
