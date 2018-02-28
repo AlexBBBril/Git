@@ -2,10 +2,12 @@
 git remote show origin  ### Инспекция-удалённого-репозитория 
 ### https://git-scm.com/book/ru/v1/Основы-Git-Работа-с-удалёнными-репозиториями#Инспекция-удалённого-репозитория
 
+### Информация о ветках
+git branch  -a ### Отображение всех веток репозитория, в том числе и удаленных
+git branch -vv ### Отображение веток локального репозитория и их связь с удаленными ветками
 
 ### Ветвление в Git
-git checkout -b <local branch> <remote>/<tracked branch> (example: git checkout -b local_branch origin/remote_branch)
-### https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки
+git checkout -b <local branch> <remote>/<tracked branch> (example: git checkout -b local_branch origin/remote_branch) ### https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки
 
 git checkout --track -b <local branch> <remote>/<tracked branch> ### Отслеживание удаленной веткой, локальной ветки 
 ### https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки#Отслеживание-веток
