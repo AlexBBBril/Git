@@ -30,6 +30,10 @@
 
 * **git push -u origin remote_branch** 
 > Создаст новую удаленную ветку с именем remote_branch и свяжет ее с той локальной веткой, с которой была сделана эта команда
+```
+git checkout -b local_branch_name ###создаст локальную ветку
+git push -u origin remote_branch_name ###создас удаленную ветку и свяжет ее с локальной веткой, с которой была запущена команда
+```
 
 * **git branch -d branch_name** ### Удалит ветку branch_name
   
