@@ -15,9 +15,16 @@
 ***
 
 ### Ветвление в Git
-* **git checkout -b local branch remote>/tracked_branch** ### (example: git checkout -b local_branch origin/remote_branch) ### Создаст новую локальную ветку и сделает ёё отслеживаемой удаленной. ### https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки
-git checkout --track -b <local branch> <remote>/<tracked branch> ### Отслеживание удаленной веткой, локальной ветки ### https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки#Отслеживание-веток
-git branch -u origin/remote_branch_name ### Если есть локальная ветка и ее необходимо настроить на удаленную ветку, которая только получена, или изменить upstream-ветку, которая отслеживается ### https://git-scm.com/book/ru/v2/Ветвление-в-Git-Удалённые-ветки
+* **git checkout -b local branch remote/tracked_branch** 
+> (example: git checkout -b local_branch origin/remote_branch)
+Создаст новую локальную ветку и сделает ёё отслеживаемой удаленной. 
+https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки
+
+* **git checkout --track -b local_branch remote/tracked branch** 
+> Отслеживание удаленной веткой, локальной ветки 
+https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки#Отслеживание-веток
+
+* git branch -u origin/remote_branch_name ### Если есть локальная ветка и ее необходимо настроить на удаленную ветку, которая только получена, или изменить upstream-ветку, которая отслеживается ### https://git-scm.com/book/ru/v2/Ветвление-в-Git-Удалённые-ветки
 git push -u origin remote_branch ### Создаст новую удаленную ветку с именем remote_branch и свяжет ее с той локальной веткой, с которой была сделана эта команда
 git branch -d branch_name ### Удалит ветку branch_name
   
