@@ -18,28 +18,43 @@
 * **git checkout -b local branch remote/tracked_branch** 
 > (example: git checkout -b local_branch origin/remote_branch)
 Создаст новую локальную ветку и сделает ёё отслеживаемой удаленной. 
-https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки
+[link](https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки)
 
 * **git checkout --track -b local_branch remote/tracked branch** 
 > Отслеживание удаленной веткой, локальной ветки 
-https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки#Отслеживание-веток
+[link](https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки#Отслеживание-веток)
 
-* git branch -u origin/remote_branch_name ### Если есть локальная ветка и ее необходимо настроить на удаленную ветку, которая только получена, или изменить upstream-ветку, которая отслеживается ### https://git-scm.com/book/ru/v2/Ветвление-в-Git-Удалённые-ветки
-git push -u origin remote_branch ### Создаст новую удаленную ветку с именем remote_branch и свяжет ее с той локальной веткой, с которой была сделана эта команда
-git branch -d branch_name ### Удалит ветку branch_name
+* ** git branch -u origin/remote_branch_name** 
+> Если есть локальная ветка и ее необходимо настроить на удаленную ветку, которая только получена, или изменить upstream-ветку, которая отслеживается 
+[link](https://git-scm.com/book/ru/v2/Ветвление-в-Git-Удалённые-ветки)
+
+* **git push -u origin remote_branch** 
+> Создаст новую удаленную ветку с именем remote_branch и свяжет ее с той локальной веткой, с которой была сделана эта команда
+
+* **git branch -d branch_name** ### Удалит ветку branch_name
   
 ***
 
 ### Commit
-git commit -am "commit message" ### Создать комит и задать сообщение для него, не вызывая vi
-git commit --amend ### Изменить предыдуший комит с возможностью редактирования сообщения 
-git commit --amend --no-edit ### Изменить предыдуший комит не редактируя сообщение комита 
+* **git commit -am "commit message"** 
+> Создать комит и задать сообщение для него, не вызывая vim
+
+* **git commit --amend** 
+> Изменить предыдуший комит с возможностью редактирования сообщения 
+
+* **git commit --amend --no-edit** 
+> Изменить предыдуший комит не редактируя сообщение комита 
 
 ***
 
 ### Отслеживание файлов
-git update-index --assume-unchanged <file> ### Git перестает отслеживание данного файла, не помещая его в .gitignore (для локальной ветки)
-git update-index --no-assume-unchanged <file> ### Начать снова отслеживать файл гитом
-git ls-files -v|grep '^h'### Получить список файлов/директорий, которые являются неотслеживаемыми 
+* **git update-index --assume-unchanged file_name** 
+> Git перестает отслеживание данного файла, не помещая его в .gitignore (для локальной ветки)
+
+* **git update-index --no-assume-unchanged file_name** 
+> Начать снова отслеживать файл гитом
+
+* **git ls-files -v|grep '^h'** 
+> Получить список файлов/директорий, которые являются неотслеживаемыми 
 
 ***
