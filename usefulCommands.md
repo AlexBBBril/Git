@@ -34,8 +34,14 @@
 git checkout -b local_branch_name ###создаст локальную ветку
 git push -u origin remote_branch_name ###создас удаленную ветку и свяжет ее с локальной веткой, с которой была запущена команда
 ```
-
-* **git branch -d branch_name** ### Удалит ветку branch_name
+####  Удаление веток
+* **git branch -d branch_name**
+> Удалит локальную ветку branch_name
+* **git push -d <remote_name> <branch_name>**
+> Удалит remote ветку branch_name из репозитория
+```
+git push -d origin branch_name
+```
   
 ***
 
