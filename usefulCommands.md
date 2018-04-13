@@ -42,6 +42,10 @@ git push -u origin remote_branch_name ###создас удаленную вет�
 ```
 git push -d origin branch_name
 ```
+
+#### Переименование ветки 
+* **git branch -m old_branch new_branch**
+> Переименует ловальную ветку
   
 ***
 
