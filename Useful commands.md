@@ -72,6 +72,9 @@ git push -d origin branch_name
 * **git commit --amend --no-edit** 
 > Изменить предыдуший комит не редактируя сообщение комита 
 
+* **git commit --allow-empty -m "empty commit"**
+> Благ --allow-empty позволяет создать пустой комит, не добавляет измененния под контроль версий 
+
 ***
 
 ### Отслеживание файлов
