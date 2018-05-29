@@ -119,8 +119,8 @@ git push -d origin branch_name
 
 Если даже на какой-либо объект нет явной ссылки, то на протяжении 30 дней на все объекты сохраняется ссылка в reflog. По этому когда производится уборка мусора все коммиты за последний месяц всё равно остаются в репозитории.
 
-* **git reflog expire --expire=1.minute refs/heads/master
-git fsck –unreachable
-git gc**
+* **git reflog expire --expire=1.minute refs/heads/master**
+* **git fsck –unreachable**
+* **git gc**
 > Чтобы избавиться от недоступных комитов
 ***
