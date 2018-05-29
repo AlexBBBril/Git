@@ -41,7 +41,7 @@ git push -u origin remote_branch_name ###создас удаленную вет�
 ####  Удаление веток
 * **git branch -d branch_name**
 > Удалит локальную ветку branch_name
-* **git push -d <remote_name> <branch_name>**
+* **git push --delete <remote_name> <branch_name>**
 > Удалит remote ветку branch_name из репозитория
 ```
 git push -d origin branch_name
