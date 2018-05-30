@@ -107,6 +107,9 @@ git push -d origin branch_name
 > изменить формат вывода лога
 * oneline - Каждый коммит в одну строку
 * short, full, и fuller
+
+* **git log --oneline**
+> Короткий синтаксис, коммиgit log --onelineт в одну строку
 ***
 
 ### Уборка мусора
