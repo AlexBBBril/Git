@@ -4,9 +4,12 @@
 * **git remote -v**
 > Отображение списка подключенных удаленных репозиториев
 ```
-    origin  git@git.*****.com:*****/*****.git (fetch)
-    origin  git@git.*****.com:*****/*****.git (push)
+    origin  git@git.acc-name.com:project/name.git (fetch)
+    origin  git@git.acc-name.com:project/name.git (push)
 ```
+
+* **git remote add name git@git.acc-name.com:project/name.git**
+> Добавить новый удаленный репозиторий под алиасом **name**
 
 * **git remote show origin**  
 > Инспекция-удалённого-репозитория [link](https://git-scm.com/book/ru/v1/Основы-Git-Работа-с-удалёнными-репозиториями#Инспекция-удалённого-репозитория)
