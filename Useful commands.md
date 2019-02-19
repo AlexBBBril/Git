@@ -80,6 +80,12 @@ git push -d origin branch_name
 * **git branch | wc -l**
 > Количество локальных веток
 
+#### Подсчет коммитов
+* **git cherry -v master**
+> Какие коммиты прибавились по сравнению с веткой master
+* **git cherry -v master | wc -l**
+> Сколько коммитов прибавились по сравнению с веткой master
+
 ***
 
 ### Commit
