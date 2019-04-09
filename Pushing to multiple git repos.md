@@ -27,3 +27,9 @@ Or if you prefer, you can make the changes directly in you repo file confugurati
 
 * git push --all -u
 > will push all your local branches and set up tracking.
+
+After all of this, you can make simple push/
+
+* git push
+
+And git will commit for each of the remote repos added.
