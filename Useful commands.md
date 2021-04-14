@@ -116,6 +116,8 @@ git push -d origin branch_name
 * **git ls-files -v|grep '^h'** 
 > Получить список файлов/директорий, которые являются неотслеживаемыми 
 
+* **git ls-files --stage**
+> Shows the contents of the index
 ***
 
 ### Просмотр истории коммитов
