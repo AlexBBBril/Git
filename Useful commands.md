@@ -118,6 +118,10 @@ git push -d origin branch_name
 
 * **git ls-files --stage**
 > Shows the contents of the index
+ 
+* **git rm --cached <file>**
+> Completely remove the file from the index
+
 ***
 
 ### Просмотр истории коммитов
