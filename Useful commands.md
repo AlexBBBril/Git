@@ -1,73 +1,74 @@
 
-### Работа с удаленными репозиториями
+### Working with remote repositories
 
 * **git remote -v**
-> Отображение списка подключенных удаленных репозиториев
+> Displaying a list of connected remote repositories
 ```
     origin  git@git.acc-name.com:project/name.git (fetch)
     origin  git@git.acc-name.com:project/name.git (push)
 ```
 
 * **git remote add name git@git.acc-name.com:project/name.git**
-> Добавить новый удаленный репозиторий под алиасом **name**
+> Add a new remote repository under an alias **name**
 
 * **git remote show origin**  
-> Инспекция-удалённого-репозитория [link](https://git-scm.com/book/ru/v1/Основы-Git-Работа-с-удалёнными-репозиториями#Инспекция-удалённого-репозитория)
+> Remote repository inspection [link](https://git-scm.com/book/ru/v1/Основы-Git-Работа-с-удалёнными-репозиториями#Инспекция-удалённого-репозитория)
 
 ***
 
-### Информация о ветках
+### Branch information
 * **git branch  -a** 
-> Отображение всех веток репозитория, в том числе и удаленных
+> Displaying all branches of the repository, including remote ones
 
 * **git branch -vv** 
-> Отображение веток локального репозитория с дополнительной информацией, такой как их связь с удаленными ветками
+> Displaying branches of the local repository with additional information such as their relationship to remote branches
 
 * **git branch -vv | grep 'origin/.*]'**
-> Отображение веток локального репозитория, связанных с удаленными ветками удаленного репозитория
+> Displaying the branches of the local repository linked to the remote branches of the remote repository
 
 ***
 
-### Ветвление в Git
+### Branching in Git
 * **git checkout -b local branch remote/tracked_branch** 
 > (example: git checkout -b local_branch origin/remote_branch)
-Создаст новую локальную ветку и сделает ёё отслеживаемой удаленной. 
+Will create a new local branch and make it a tracked remote branch.
 [link](https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки)
 
 * **git checkout --track -b local_branch remote/tracked branch** 
-> Отслеживание удаленной веткой, локальной ветки 
+> Tracking by remote branch, local branch
 [link](https://git-scm.com/book/ru/v1/Ветвление-в-Git-Удалённые-ветки#Отслеживание-веток)
 
 * **git branch -u origin/remote_branch_name** 
-> Если есть локальная ветка и ее необходимо настроить на удаленную ветку, которая только получена, или изменить upstream-ветку, которая отслеживается 
+> If you have a local branch and you need to set it up to a remote branch that has just been checked out, 
+> or change the upstream branch that is being tracked
 [link](https://git-scm.com/book/ru/v2/Ветвление-в-Git-Удалённые-ветки)
 
 * **git push -u origin remote_branch** 
-> Создаст новую удаленную ветку с именем remote_branch и свяжет ее с той локальной веткой, с которой была сделана эта команда
+> Will create a new remote branch named remote_branch and link it back to the local branch this command was issued with
 ```
-git checkout -b local_branch_name ###создаст локальную ветку
-git push -u origin remote_branch_name ###создас удаленную ветку и свяжет ее с локальной веткой, с которой была запущена команда
+git checkout -b local_branch_name ### will create a local branch
+git push -u origin remote_branch_name ### will create a remote branch and link it to the local branch from which the command was run
 ```
 
 * **git push origin --all**
-> Создаст удаленные ветки для всех локальных веток, которые еще не связаны с удаленными ветками и запушит данные из локальных веток в удаленные
+> Will create remote branches for all local branches that are not yet linked to remote branches and push data from local branches to remote ones
 
-####  Удаление веток
+####  Deleting branches
 * **git branch -d branch_name**
-> Удалит локальную ветку branch_name
+> Will delete the local branch branch_name
 * **git push --delete <remote_name> <branch_name>**
-> Удалит remote ветку branch_name из репозитория
+> Will remove the remote branch branch_name from the repository
 ```
 git push -d origin branch_name
 ```
-#### Восстановление веток
+#### Restoring branches
 * **git branch branchName sha1**
-> Восстановит удаленную локальную ветку с имеменем **branchName** и хешем **sha1**
+> Rebuild the remote local branch with name **branchName** and hash **sha1**
 
 
-#### Переименование ветки 
+#### Renaming a branch
 * **git branch -m old_branch new_branch**
-> Переименует ловальную ветку
+> Renames the local branch
   
 #### Отмена изменений
 * **git reset --soft a2f674b3b94060d3635bd41022626aff44411695**
