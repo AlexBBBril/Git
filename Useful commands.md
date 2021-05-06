@@ -122,6 +122,9 @@ git push -d origin branch_name
 * **git rm --cached <file>**
 > Completely remove the file from the index
 
+* **git rm --cached -r -f . **
+> Completely remove all files from the index
+
 ***
 
 ### Просмотр истории коммитов
